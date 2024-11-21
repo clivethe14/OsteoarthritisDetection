@@ -1,5 +1,7 @@
 function averageThickness = AverageCartilageThickness(image)
     BinaryImage = image;
+    
+    BinaryImage(1:90,:)= 255;
 
     % step 4
     % labels each of the component to a specfic label/value to identify it
@@ -46,7 +48,7 @@ function averageThickness = AverageCartilageThickness(image)
             % calculating distance
             distancesMatrix = pdist2(femurBoundaryExtended, tibiaBoundaryExtended);
             minDistances = min(distancesMatrix, [], 2);
-            averageThickness = min(minDistances);%mean(minDistances);
+            averageThickness = mean(minDistances);
             %overallMinDistance = min(minDistances);
 
           else
