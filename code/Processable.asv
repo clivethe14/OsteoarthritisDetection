@@ -1,0 +1,12 @@
+function bool = Processable(image)
+    count = zeros(1,2);
+    
+    count(1)=sum(image(:)==0);
+    count(2)=sum(image(:)~=0);
+    
+    disp(['Non-Zero Percentage:',num2str((count(2)/numel(image))*100)])
+    bool = true;
+    
+end
+
+for i=50:54
