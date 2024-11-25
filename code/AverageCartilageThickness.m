@@ -12,7 +12,7 @@ function averageThickness = AverageCartilageThickness(image)
     % idenfiying the femur and tibia
     [~, sortedIdx] = sort([regions.Area], 'descend');
     if length(sortedIdx) < 2
-        disp(['Warning: Not enough regions detected in image ', slice_filename]);
+        disp('Warning: Not enough regions detected in image ');
     else
         femurRegion = regions(sortedIdx(1)).PixelIdxList;
         tibiaRegion = regions(sortedIdx(2)).PixelIdxList;
@@ -30,7 +30,7 @@ function averageThickness = AverageCartilageThickness(image)
         if ~isempty(femurBoundary) && ~isempty(tibiaBoundary)
             % step 7
             minYFemur = max(femurBoundary{1}(:, 1)); 
-            maxYTibia = min(tibiaBoundary{1}(:, 1));
+            maxYTibia = minYFemur;
 
             % step 8 defining the margin and the boundaries
             verticalMargin = 7;
