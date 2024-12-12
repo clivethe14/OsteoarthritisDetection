@@ -10,8 +10,12 @@ function bool = Processable(image, filename)
     
     %disp(nonzero_percentage);
     
-    if nonzero_percentage>15
+    if nonzero_percentage>20
         BinaryImage = image;
+        
+        se=strel('square',5);
+        BinaryImage=imerode(BinaryImage,se);
+        BinaryImage(1:135,:)= 255;
     
         BinaryImage(1:90,:)= 255;
 
