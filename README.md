@@ -7,8 +7,8 @@ The objective of this study is to develop an algorithm to measure the distance b
 # Steps to run the code:
 Paste all segemented images in the All_Images directory inside the code directory. You can find all the images on this link: https://drive.google.com/file/d/1pp0FhhMwLZ5mO1wlgtEt8c2W42kl3TXS/view?usp=sharing
 
--> Run main.m on MATLAB. (Code takes about 25-30 mins to process all the images.
--> Bring the data into the format as shown in file CV_Data.csv file in the ML_code directory (keep label column as the same in CV_Data.csv).
+-> Run main.m on MATLAB. (Code takes about 25-30 mins to process all the images.   
+-> Bring the data into the format as shown in file CV_Data.csv file in the ML_code directory (keep label column as the same in CV_Data.csv).   
 -> Run this data over the blocks of code as put in the 'ML_models_code.ipynb' (you can use Google Collab).
 
 
