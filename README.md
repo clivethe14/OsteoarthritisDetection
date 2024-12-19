@@ -5,11 +5,10 @@ Osteoarthritis (OA) is the most common form of arthritis in the knee. Cartilage 
 The objective of this study is to develop an algorithm to measure the distance between femur and tibia bones in the bone masks. We shall use the distances measured accross various points between the Femur and Tibia as features to predict the severity level of knee OA.
 
 # Steps to run the code:
-Paste all segemented images in the All_Images directory inside the code directory. You can find all the images on this link: https://drive.google.com/file/d/1pp0FhhMwLZ5mO1wlgtEt8c2W42kl3TXS/view?usp=sharing
-
--> Run main.m on MATLAB. (Code takes about 25-30 mins to process all the images.   
+-> Paste all segmented images in the All_Images directory inside the code directory. You can find all the images on this link: https://drive.google.com/file/d/1pp0FhhMwLZ5mO1wlgtEt8c2W42kl3TXS/view?usp=sharing   
+-> Run main.m on MATLAB. (Code takes about 25-30 mins to process all the images).   
 -> Bring the data into the format as shown in file CV_Data.csv file in the ML_code directory (keep label column as the same in CV_Data.csv).  
--> Alternatively you can also use the CV_Data.csv file to train and test the model.  
--> Run this data over the blocks of code as put in the 'ML_models_code.ipynb' (you can use Google Collab).
+-> Alternatively, you can also use the CV_Data.csv file to train and test the model.  
+-> Run this data over the blocks of code as put in the 'ML_models_code.ipynb' (you can use Google Colab).
 
 
